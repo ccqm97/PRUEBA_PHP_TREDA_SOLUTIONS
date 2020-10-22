@@ -4,7 +4,7 @@
     <footer class="sticky-footer">
         <div class="container my-auto">
             <div class="copyright text-center my-auto">
-            <span>Copyright © TransmiApp 2020</span>
+            <span>Copyright © TiendApp 2020</span>
             </div>
         </div>
     </footer>
@@ -54,14 +54,9 @@
   <!-- Core plugin JavaScript-->
   <script src="<?php echo base_url();?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Page level plugin JavaScript-->
-  <script src="<?php echo base_url();?>assets/vendor/chart.js/Chart.min.js"></script>
-
   <!-- Custom scripts for all pages-->
   <script src="<?php echo base_url();?>assets/js/sb-admin.min.js"></script>
 
-  <!-- Demo scripts for this page-->
-  <script src="<?php echo base_url();?>assets/js/demo/chart-area-demo.js"></script>
 
   <!-- DataTable-->    
   <script src="<?php echo base_url();?>assets/DataTable/datatables.min.js"></script>
@@ -73,6 +68,7 @@
 
   <!-- TimePicker-->
   <script src="<?php echo base_url();?>assets/timepicker/js/timepicker.js"></script>
+  
   <script type="text/javascript">
     var baseUrl = "<?php echo base_url();?>";
     $(document).ready(function (){

@@ -8,10 +8,16 @@
           <span>Inicio</span>
         </a>
       </li-->
+      <li class="nav-item" id="adminTienda">
+        <a class="nav-link" href="<?php echo base_url()."index.php/Controller/moduloCrearTienda"?>" id="EstationDropdown" role="button">
+        <i class="fas fa-store-alt"></i>
+          <span>Administrar Tiendas</span>
+        </a>
+      </li>      
       <li class="nav-item">
         <a class="nav-link" href="<?php echo base_url()."index.php/Controller/moduloCrearTienda"?>" id="EstationDropdown" role="button">
-        <i class="fas fa-street-view"></i>
-          <span>Administrar Tiendas</span>
+        <i class="fas fa-boxes"></i>
+          <span>Administrar Productos</span>
         </a>
       </li>
     </ul>
