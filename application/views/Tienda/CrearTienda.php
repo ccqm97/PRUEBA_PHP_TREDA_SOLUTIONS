@@ -60,6 +60,7 @@
                     </div>                            
                     
                     <button class="btn btn-success btn-block" id="bntSave" type="submit" href="#"><i class="fas fa-save"></i> Guardar Cambios</button>
+                    <button class="btn btn-danger btn-block" id="bntCancel" type="button" href="#"><i class="fas fa-undo"></i> Cancelar</button>
                 </form>
             </div>
         </div>

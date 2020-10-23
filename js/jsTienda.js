@@ -1,8 +1,13 @@
 $("#adminTienda").addClass("nav-item active");
 $("#editTienda").hide();
+
+$("#bntCancel").click(function(){
+    $("#createTienda").show();
+    $("#editTienda").hide();
+});
+
 $("#formCrearTienda").on('submit', function(evt){
     evt.preventDefault();
-
 /**Se mandan los datos mediante el POST al controller */
 $.post(baseUrl+"index.php/Controller/crearTienda",
     {Nombre:$("#NOMBRE_TIENDA").val(),
@@ -11,6 +16,8 @@ $.post(baseUrl+"index.php/Controller/crearTienda",
             if (data) {
                 var oTable = $('#TableTiendas').DataTable( ); //actualizar datatable
                 oTable.ajax.reload();
+                $("#NOMBRE_TIENDA").val("");
+                $("#Fecha_de_apertura").val("");
                 new PNotify({
                     title: 'Guardó Exitosamente',
                     text: "La tienda ha sido guardada." ,
@@ -130,6 +137,8 @@ $("#formEditTienda").on('submit',
                         $("#NOMBRE_TIENDA_E").val("");
                         $("#Fecha_de_apertura_E").val("");
                         
+                        $("#NOMBRE_TIENDA_E").val(""),
+                         $("#Fecha_de_apertura_E").val(""),
                         new PNotify({
                             title: 'Se actualizó la tienda',
                             text: "Se ha modificado la informacón de la tienda correctamente." ,

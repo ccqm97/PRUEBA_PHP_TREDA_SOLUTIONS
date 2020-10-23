@@ -14,8 +14,8 @@
           <span>Administrar Tiendas</span>
         </a>
       </li>      
-      <li class="nav-item">
-        <a class="nav-link" href="<?php echo base_url()."index.php/Controller/moduloCrearTienda"?>" id="EstationDropdown" role="button">
+      <li class="nav-item" id="adminProducto">
+        <a class="nav-link" href="<?php echo base_url()."index.php/Controller/moduloCrearProducto"?>" id="EstationDropdown" role="button">
         <i class="fas fa-boxes"></i>
           <span>Administrar Productos</span>
         </a>
